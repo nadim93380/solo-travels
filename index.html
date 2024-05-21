@@ -43,7 +43,7 @@
           </div>
 
     </header>
-    <main>
+    <main id="mainBody">
         <!-- Banner Section -->
         <section class="mb-16 w-4/5 mx-auto">
             <div class="hero h-[550px] bg-cover" style="background-image: url('./images/banner.png'); border-radius: 15px;">
@@ -243,7 +243,7 @@
                             <div class="label">
                               <span class="label-text text-2xl font-semibold">Phone Number</span>
                             </div>
-                            <input type="text" placeholder="Enter Your Phone Number" class="input input-bordered w-full" />
+                            <input id="numberField" type="text" placeholder="Enter Your Phone Number" class="input input-bordered w-full" />
                           </label>
                           <label class="form-control w-full">
                             <div class="label">
@@ -251,7 +251,7 @@
                             </div>
                             <input type="text" placeholder="Enter Your Email" class="input input-bordered w-full" />
                           </label>
-                          <button class="btn bg-green-400 text-white w-full">Next</button>
+                          <button id="nextBtn" class="btn bg-green-400 text-white w-full" disabled>Next</button>
                     </div>
 
                 </div>

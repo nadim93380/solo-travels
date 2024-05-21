@@ -87,3 +87,11 @@ document.getElementById('CouponBtn').addEventListener('click', function (e) {
         couponBtn.classList.add('bg-green-400');
     }
 })
+
+// function for enable button by ID name
+
+function enableBtnById(id) {
+    const targetId = document.getElementById(id);
+    targetId.removeAttribute('disabled');
+    
+}
