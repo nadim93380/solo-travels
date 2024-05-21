@@ -4,10 +4,15 @@ let sum = 0;
 for (const seat of allSeats) {
     seat.addEventListener('click', function (e) {
         sum = sum + 1;
-        updateDataById('selectedTicket', sum)
+        updateDataById('selectedTicket', sum);
+        if (sum === 4) {
+            const couponBtn = document.getElementById('CouponBtn');
+            couponBtn.removeAttribute('disabled');
+            couponBtn.classList.add('bg-green-400');
+        }
         if (sum > 4) {
             alert('Tickte Purchase Limit Exceeded');
-            return
+            return;
         }
 
         e.target.setAttribute('disabled', 'true');
@@ -19,6 +24,8 @@ for (const seat of allSeats) {
         addSeatList(e.target.innerText);
         updateTotalPriceById()
         updateGrandPriceById()
+
+        
         
 
         
