@@ -11,6 +11,7 @@ for (const seat of allSeats) {
             couponBtn.classList.add('bg-green-400');
         }
         if (sum > 4) {
+            sum = 4;
             alert('Tickte Purchase Limit Exceeded');
             return;
         }

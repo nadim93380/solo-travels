@@ -81,6 +81,9 @@ document.getElementById('CouponBtn').addEventListener('click', function (e) {
 
         document.getElementById('grandPrice').innerText = newGrandPrice;
     } else {
-        alert('Wrong Coupon Code')
+        alert('Wrong Coupon Code');
+        const couponBtn = document.getElementById('CouponBtn');
+        couponBtn.removeAttribute('disabled');
+        couponBtn.classList.add('bg-green-400');
     }
 })
