@@ -30,3 +30,13 @@ function addSeatList(data) {
 
     document.getElementById('listField').appendChild(newLi);
 }
+
+// function for add ticket price to total price
+function updateTotalPriceById() {
+    const totalPriceField = document.getElementById('totalPrice');
+    const totalPriceText = totalPriceField.innerText;
+    const totalPrice = parseInt(totalPriceText);
+    const newTotalPrice = totalPrice + 550;
+    document.getElementById('totalPrice').innerText = newTotalPrice;
+
+}

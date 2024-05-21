@@ -14,6 +14,7 @@ for (const seat of allSeats) {
         e.target.classList.add("bg-green-400")
         minusAvailableSeats();
         addSeatList(e.target.innerText);
+        updateTotalPriceById()
         
 
         
