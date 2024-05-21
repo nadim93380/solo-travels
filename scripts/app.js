@@ -4,6 +4,7 @@ let sum = 0;
 for (const seat of allSeats) {
     seat.addEventListener('click', function (e) {
         sum = sum + 1;
+        updateDataById('selectedTicket', sum)
         if (sum > 4) {
             alert('Tickte Purchase Limit Exceeded');
             return
@@ -13,8 +14,11 @@ for (const seat of allSeats) {
         e.target.classList.remove("bg-slate-200")
         e.target.classList.add("bg-green-400")
         minusAvailableSeats();
+
+
         addSeatList(e.target.innerText);
         updateTotalPriceById()
+        updateGrandPriceById()
         
 
         

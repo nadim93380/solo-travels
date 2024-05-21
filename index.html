@@ -212,7 +212,7 @@
                     <div class="bg-slate-200 rounded-lg p-10 space-y-5">
                         <ul id="listField">
                             <li class="flex justify-between items-center border-b-2 border-dashed border-gray-700 font-bold">
-                                <p>Seat</p>
+                                <p>Seat <span id="selectedTicket" class="bg-green-400 px-3 rounded-lg">0</span></p>
                                 <p>Class</p>
                                 <p>Price</p>
                             </li>
@@ -222,12 +222,12 @@
                             <p>BDT <span id="totalPrice">00</span></p>
                         </div>
                         <label class="input input-bordered flex items-center gap-2">
-                            <input type="text" class="grow" placeholder="Search" />
-                            <button class="btn bg-green-400 text-white">Apply</button>
+                            <input id="codeField" type="text" class="grow" placeholder="Coupon Code" />
+                            <button id="CouponBtn" class="py-2 px-7 font-bold rounded-lg bg-green-400 text-white" disabled>Apply</button>
                         </label>
                         <div class="flex justify-between">
                             <h4 class="font-bold">Grand Price</h4>
-                            <p>BDT <span>1100</span></p>
+                            <p>BDT <span id="grandPrice">00</span></p>
                         </div>
 
                     </div>

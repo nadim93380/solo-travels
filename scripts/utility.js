@@ -40,3 +40,47 @@ function updateTotalPriceById() {
     document.getElementById('totalPrice').innerText = newTotalPrice;
 
 }
+
+// function for add ticket price to grand price
+
+function updateGrandPriceById() {
+    const granPriceField = document.getElementById('grandPrice');
+    const grandPrice = parseInt(granPriceField.innerText);
+
+    const totalPriceField = document.getElementById('totalPrice');
+    const totalPriceText = totalPriceField.innerText;
+    const totalPrice = parseInt(totalPriceText);
+
+    document.getElementById('grandPrice').innerText = totalPrice;
+
+}
+
+// function for coupon code
+
+document.getElementById('CouponBtn').addEventListener('click', function (e) {
+    e.target.setAttribute('disabled', 'true');
+    e.target.classList.remove("bg-green-400")
+    e.target.classList.add("bg-gray-400");
+    const couponField = document.getElementById('codeField');
+    const couponCode = couponField.value;
+
+    if (couponCode === 'NEW15') {
+        console.log('15% discount');
+        const granPriceField = document.getElementById('grandPrice');
+        const grandPrice = parseInt(granPriceField.innerText);
+        const newGrandPrice = grandPrice - grandPrice * 0.15;
+
+        document.getElementById('grandPrice').innerText = newGrandPrice;
+        
+    }
+    else if (couponCode === 'COUPLE20') {
+        console.log("20% off");
+        const granPriceField = document.getElementById('grandPrice');
+        const grandPrice = parseInt(granPriceField.innerText);
+        const newGrandPrice = grandPrice - grandPrice * 0.2;
+
+        document.getElementById('grandPrice').innerText = newGrandPrice;
+    } else {
+        alert('Wrong Coupon Code')
+    }
+})
