@@ -31,7 +31,10 @@ for (const seat of allSeats) {
             const numField = document.getElementById('numberField');
             const numText = numField.value;
             if (typeof (parseInt(numText)) === 'number' && numText.length === 11) {
-                enableBtnById('nextBtn')
+                enableBtnById('nextBtn');
+                const amountTobePaid = document.getElementById('grandPrice').innerText;
+                console.log(amountTobePaid);
+                document.getElementById('paidField').innerText = amountTobePaid;
             }
             
         })
