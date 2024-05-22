@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body >
-    <header class="w-4/5 mx-auto my-4">
+    <header class="w-[95%] lg:w-4/5 mx-auto my-4">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
               <div class="dropdown">
@@ -46,7 +46,7 @@
     </header>
     <main id="mainBody">
         <!-- Banner Section -->
-        <section class="mb-16 w-4/5 mx-auto">
+        <section class="mb-16 w-[95%] lg:w-4/5 mx-auto">
             <div class="hero h-[550px] bg-cover" style="background-image: url('./images/banner.png'); border-radius: 15px;">
                 <div class="hero-content text-center text-neutral-content">
                   <div class="max-w-md">
@@ -58,14 +58,14 @@
               </div>
         </section>
         <!-- Coupon Section -->
-        <section class="w-4/5 mx-auto mb-20">
+        <section class="w-[95%] lg:w-4/5 mx-auto mb-20">
             <h1 class="font-bold text-center text-4xl mb-16">BEST OFFERS FOR YOU</h1>
             <div class="flex flex-col lg:flex-row justify-center items-center gap-5">
                 <!-- Coupon 1 -->
-                <div class="flex w-full lg:flex-1 px-14 justify-between items-center bg-yellow-400 rounded-2xl h-[220px]">
+                <div class="flex w-full lg:flex-1 px-5 lg:px-14 justify-between items-center bg-yellow-400 rounded-2xl h-[220px]">
                     <div>
                         <p>
-                           <span class="text-5xl font-semibold"> 15% OFF</span><br>
+                           <span class="text-3xl lg:text-5xl font-semibold"> 15% OFF</span><br>
                             on your next purchase <br>
                             use by January 2024
                         </p>
@@ -75,16 +75,16 @@
                     </div>
                     <div >
                         <p class="text-center">
-                            <span class="text-5xl font-semibold"> NEW15</span><br>
+                            <span class="text-3xl lg:text-5xl font-semibold"> NEW15</span><br>
                              Coupon Code
                          </p>
                     </div>
                 </div>
                 <!-- Coupon 2 -->
-                <div class="flex w-full lg:flex-1 px-14 justify-between items-center bg-pink-400 rounded-2xl h-[220px]">
+                <div class="flex w-full lg:flex-1 px-5 lg:px-14 justify-between items-center bg-pink-400 rounded-2xl h-[220px]">
                     <div>
                         <p>
-                           <span class="text-5xl font-semibold"> 20% OFF</span><br>
+                           <span class="text-3xl lg:text-5xl font-semibold"> 20% OFF</span><br>
                             on your next purchase <br>
                             use by January 2024
                         </p>
@@ -94,7 +94,7 @@
                     </div>
                     <div>
                         <p class="text-center">
-                            <span class="text-5xl font-semibold"> COUPLE20</span><br>
+                            <span class="text-2xl lg:text-5xl font-semibold"> COUPLE20</span><br>
                              Coupon Code
                          </p>
                     </div>
@@ -104,14 +104,14 @@
 
         <!-- Ticket Section -->
         <section id="ticket" class="w-full border-t-4 border-green-500 rounded-2xl bg-[#F7F8F8]">
-            <div class="text-center w-4/5 lg:w-1/2 mx-auto space-y-6  my-10">
+            <div class="text-center w-[95%] lg:w-1/2 mx-auto space-y-6  my-10">
                 <h3 class="text-4xl font-bold">Solo Travels</h3>
                 <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
             </div>
             <!-- Ticket Price route and bus name div -->
-            <div class="bg-white flex flex-col justify-around lg:flex-row w-4/5 mx-auto rounded-2xl mb-10">
+            <div class="bg-white flex flex-col justify-around lg:flex-row w-[95%] lg:w-4/5 mx-auto rounded-2xl pb-6 lg:pb-0 mb-10">
                 <div class=" w-11/12 mx-auto lg:mx-0 lg:w-3/5 py-10">
-                    <div class="flex justify-between items-center">
+                    <div class="flex flex-col lg:flex-row gap-4 lg:gap-0 justify-between items-center">
                         <div class="flex justify-center items-center gap-3">
                             <img src="./images/bus-logo.png" alt="">
                             <div class="flex flex-col justify-center items-center ">
@@ -130,9 +130,9 @@
                             <p>Departure Time</p>
                             <p>9:00 PM</p>
                         </div>
-                        <div class="flex justify-between items-center mt-4 px-4 pb-3">
+                        <div class="flex flex-wrap justify-between items-center mt-4 px-4 pb-3">
                             <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#F7F8F8]">Boarding Point - Laxmipur</button>
-                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg hidden lg:block bg-[#F7F8F8]">Dropping Point - Bogura</button>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#F7F8F8]">Dropping Point - Bogura</button>
                             <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#F7F8F8]">Est. Time - 11 Hour</button>
                         </div>
 
@@ -147,9 +147,9 @@
 
             </div>
             <!-- main ticket -->
-            <div class="flex flex-col lg:flex-row  justify-center gap-20 bg-white w-full lg:w-4/5 mx-auto p-24 rounded-2xl">
+            <div class="flex flex-col lg:flex-row  justify-center gap-5 bg-white w-full lg:w-4/5 mx-auto p-10 lg:p-20 rounded-2xl border-none">
                 <!-- seat data input field -->
-                <div class="border-r-4 border-dashed pr-10">
+                <div class="border-none lg:border-r-4 lg:border-dashed p-0 lg:pr-5">
                     <h3 class="text-3xl border-b-2 border-dashed pb-6 mt-6 text-center lg:text-left">Select Your Seat</h3>
                         <div class="flex justify-between items-center py-5 border-b-2 border-dashed mb-6 font-bold">
                             
@@ -157,56 +157,55 @@
                                 <img src="./images/seat-gray.png" alt="">
                                 <p>Available</p>
                             </div>
-                            <div class="flex justify-center items-center gap-2 text-green-4500">
+                            <div class="flex justify-center items-center gap-2 text-green-500">
                                 <img src="./images/seat-green-filled.png" alt="">
                                 <p>Selected</p>
                             </div>
                         </div>
                     <!-- seats -->
-                    <div class="text-right pb-4"><button class="bg-slate-200 rounded-xl py-3 font-bold px-8 text-2xl"><i class="fa-regular fa-circle-xmark" style="color: #3b3e45;"></i></button></div>
                     <div>
-                        <div class="grid grid-cols-4 gap-8">
-                            
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">A1</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">A2</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">A3</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">A4</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">B1</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">B2</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">B3</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">B4</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">C1</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">C2</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">C3</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">C4</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">D1</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">D2</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">D3</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">D4</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">E1</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">E2</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">E3</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">E4</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">F1</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">F1</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">F2</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">F3</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">G4</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">G2</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">G3</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">G4</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">H1</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">H2</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">H3</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">H4</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">I1</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">I2</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">I3</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">I4</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">J1</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">J2</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">J3</button>
-                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-9">J4</button>
+                        <div class="grid grid-cols-4 gap-5 lg:gap-8">
+                            <button class="bg-slate-200 rounded-xl py-4 font-bold px-5 lg:px-9 text-xl col-start-4"><i class="fa-regular fa-circle-xmark" style="color: #3b3e45;"></i></button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">A1</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">A2</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">A3</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">A4</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">B1</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">B2</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">B3</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">B4</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">C1</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">C2</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">C3</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">C4</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">D1</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">D2</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">D3</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">D4</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">E1</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">E2</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">E3</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">E4</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">F1</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">F1</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">F2</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">F3</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">G4</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">G2</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">G3</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">G4</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">H1</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">H2</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">H3</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">H4</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">I1</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">I2</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">I3</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">I4</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">J1</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">J2</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">J3</button>
+                            <button class="bg-slate-200 rounded-xl py-4 seat font-bold px-5 lg:px-9">J4</button>
                             
                             
                             
@@ -217,8 +216,8 @@
                 </div>
                 <!-- seat Data output filed-->
                 <div class="w-full lg:w-3/5 mx-auto">
-                    <h3 class="text-3xl border-b-2 border-dashed pb-6 mt-6 mb-7">Select Your Seat</h3>
-                    <div class="bg-slate-200 rounded-lg p-10 space-y-5">
+                    <h3 class="text-3xl border-b-2 border-dashed pb-6 mt-6 mb-7 text-center lg:text-left">Select Your Seat</h3>
+                    <div class="bg-slate-200 rounded-lg p-5 lg:p-10 space-y-5">
                         <ul id="listField">
                             <li class="flex justify-between items-center border-b-2 border-dashed border-gray-700 font-bold">
                                 <p>Seat <span id="selectedTicket" class="bg-green-400 px-3 rounded-lg">0</span></p>
@@ -232,7 +231,7 @@
                         </div>
                         <label class="input input-bordered flex items-center gap-2">
                             <input id="codeField" type="text" class="grow" placeholder="Coupon Code" />
-                            <button id="CouponBtn" class="py-2 px-7 font-bold rounded-lg bg-gray-400 text-white" disabled>Apply</button>
+                            <button id="CouponBtn" class="py-2 px-2 lg:px-7 font-bold rounded-lg bg-gray-400 text-white" disabled>Apply</button>
                         </label>
                         <div class="flex justify-between">
                             <h4 class="font-bold">Grand Price</h4>
