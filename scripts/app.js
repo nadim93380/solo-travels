@@ -13,7 +13,7 @@ for (const seat of allSeats) {
         if (sum > 4) {
             sum = 4;
             updateDataById('selectedTicket', sum);
-            alert('Tickte Purchase Limit Exceeded');
+            alert('Ticket Purchase Limit Exceeded');
             return;
         }
 
