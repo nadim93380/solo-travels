@@ -24,7 +24,7 @@ function addSeatList(data) {
     const newP = document.createElement('p')
     newP.innerText = data;
     newLi.innerHTML = `<p class="font-semibold">550</p>
-    <p>Economy</p>`
+    <p>AC_BUSINESS</p>`
     newLi.appendChild(newP);
     newLi.classList.add('flex', 'flex-row-reverse', 'justify-between', 'pt-3')
 
