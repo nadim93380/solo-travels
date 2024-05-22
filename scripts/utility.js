@@ -68,7 +68,9 @@ document.getElementById('CouponBtn').addEventListener('click', function (e) {
         console.log('15% discount');
         const granPriceField = document.getElementById('grandPrice');
         const grandPrice = parseInt(granPriceField.innerText);
-        const newGrandPrice = grandPrice - grandPrice * 0.15;
+        const discount = grandPrice * 0.15;
+        document.getElementById('discount').innerText = discount;
+        const newGrandPrice = grandPrice - discount;
 
         document.getElementById('grandPrice').innerText = newGrandPrice;
         
@@ -77,7 +79,9 @@ document.getElementById('CouponBtn').addEventListener('click', function (e) {
         console.log("20% off");
         const granPriceField = document.getElementById('grandPrice');
         const grandPrice = parseInt(granPriceField.innerText);
-        const newGrandPrice = grandPrice - grandPrice * 0.2;
+        const discount = grandPrice * 0.2;
+        document.getElementById('discount').innerText = discount;
+        const newGrandPrice = grandPrice - discount;
 
         document.getElementById('grandPrice').innerText = newGrandPrice;
     } else {
